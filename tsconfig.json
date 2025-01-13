@@ -1,3 +1,27 @@
 {
-  "extends": "./.quasar/tsconfig.json"
+  "extends": "./.quasar/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/views/components/*"],
+      "@composables/*": ["src/composables/*"],
+      "@modules/*": ["src/views/modules/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@layouts/*": ["src/views/layouts/*"],
+      "@services/*": ["src/services/*"],
+      "@pages/*": ["src/views/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@stores/*": ["src/stores/*"],
+      "@router/*": ["src/router/*"],
+      "@utils/*": ["src/utils/*"],
+      "@views/*": ["src/views/*"],
+      "@/*": ["src/*"],
+      "#q-app": ["node_modules/@quasar/app-vite/types/index.d.ts"],
+      "#q-app/wrappers": ["node_modules/@quasar/app-vite/types/app-wrappers.d.ts"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

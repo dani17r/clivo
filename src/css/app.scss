@@ -1,1 +1,29 @@
-// app global css in SCSS form
+.body--light {
+  /* ... */
+  .bg-modedark {
+    background-color: white;
+  }
+  .text-modedark {
+    color: $dark;
+  }
+
+  .modedark {
+    background-color: white;
+    color: $dark;
+  }
+}
+
+.body--dark {
+  /* ... */
+  .bg-modedark {
+    background-color: $dark;
+  }
+  .text-modedark {
+    color: white;
+  }
+
+  .modedark {
+    background-color: $dark;
+    color: white;
+  }
+}
