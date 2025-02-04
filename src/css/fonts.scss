@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'font-tech';
+  src: url('src/assets/fonts/TechFont-vnAZ.ttf') format('truetype');
+  // font-weight: bold;
+}
+
+@font-face {
+  font-family: 'font-zen-dots';
+  src: url('src/assets/fonts/ZenDots-Regular.ttf') format('truetype');
+  // font-weight: bold;
+}
+
+@font-face {
+  font-family: 'font-michroma';
+  src: url('src/assets/fonts/Michroma-Regular.ttf') format('truetype');
+}
+
+$font-primary: 'font-tech', sans-serif;
+$font-secondary: 'font-sen-dots', sans-serif;
+$font-therd: 'font-michroma', sans-serif;
+
+.font-tech {
+  font-family: 'font-tech';
+}
+.font-zen-dots {
+  font-family: 'font-zen-dots';
+}
+.font-michroma {
+  font-family: 'font-michroma';
+}
+
+body {
+  // font-family: $font-secondary;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+}

@@ -11,6 +11,11 @@
         <q-select v-model="locale" :options="localeOptions" dense borderless emit-value map-options options-dense
           style="min-width: 110px; padding-right: 30px;" />
 
+        <div>
+          <q-btn outline color="white" label="Logout" no-caps @click="dialogs.confirm.toggle()" />
+          <ConfirmAction message="Are you sure to log out ?" v-model="dialogs.confirm.status" @yes="logout()" />
+        </div>
+
         <div>V {{ $q.version }}</div>
       </q-toolbar>
     </q-header>
@@ -34,19 +39,29 @@
 </template>
 
 <script setup lang="ts">
-import modeDark from '@composables/dark';
 import EssentialLink, { type EssentialLinkProps } from '@components/EssentialLink.vue';
+import ConfirmAction from '@components/dialogs/ConfirmDialog.vue';
+import { ref, computed, onMounted, reactive } from 'vue';
+import superComposable from '@composables/super';
 import { onBeforeRouteUpdate } from 'vue-router';
-import { ref, computed, onMounted } from 'vue';
+import modeDark from '@composables/dark';
 import { useI18n } from 'vue-i18n';
 
 const { isDark, val, toggle, init } = modeDark();
+const { store, router, $q } = superComposable();
 
 const { locale, t } = useI18n({ useScope: 'global' });
 const localeOptions = ref([
   { value: 'es-LAT', label: 'Español' },
   { value: 'en-US', label: 'Ingles' },
 ]);
+
+const dialogs = reactive({
+  confirm: {
+    status: false,
+    toggle: () => (dialogs.confirm.status = !dialogs.confirm.status),
+  },
+});
 
 const linksList: EssentialLinkProps[] = [
   {
@@ -76,6 +91,16 @@ const linksList: EssentialLinkProps[] = [
 ];
 
 const leftDrawerOpen = ref(false);
+
+const logout = () => {
+  $q.loading.show();
+  store.auth.signOut(() => {
+    setTimeout(() => {
+      router.push({ name: 'init' });
+      $q.loading.hide();
+    }, 350);
+  });
+};
 
 function toggleLeftDrawer() {
   leftDrawerOpen.value = !leftDrawerOpen.value;

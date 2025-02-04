@@ -11,13 +11,13 @@
 
       <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-lg q-screen-xl">
 
-        <q-input v-model="nombre_empresa" :label="$t('pages.register.form.nombre_empresa')" lazy-rules
+        <q-input v-model="nombre_empresa" :label="$t('pages.register.form.nombre_empresa')" lazy-rules="ondemand"
           :rules="[(val) => (val && val.length > 0) || 'Please type something']" />
 
-        <q-input v-model="email" :label="$t('pages.register.form.email')" lazy-rules
+        <q-input v-model="email" :label="$t('pages.register.form.email')" lazy-rules="ondemand"
           :rules="[(val) => (val && val.length > 0) || 'Please type something']" />
 
-        <q-input class="q-mt-md" v-model="password" :label="$t('pages.register.form.password')" lazy-rules
+        <q-input class="q-mt-md" v-model="password" :label="$t('pages.register.form.password')" lazy-rules="ondemand"
           :rules="[(val) => (val && val.length > 0) || 'Please type something']"
           :type="passwordView ? 'text' : 'password'">
 
@@ -27,8 +27,8 @@
           </template>
         </q-input>
 
-        <q-input class="q-mt-md" v-model="passwordConfirm" :label="$t('pages.register.form.passwordConfirm')" lazy-rules
-          :rules="[(val) => (val && val.length > 0) || 'Please type something']"
+        <q-input class="q-mt-md" v-model="passwordConfirm" :label="$t('pages.register.form.passwordConfirm')"
+          lazy-rules="ondemand" :rules="[(val) => (val && val.length > 0) || 'Please type something']"
           :type="passwordConfirmView ? 'text' : 'password'">
           <template v-slot:append>
             <q-icon :name="!passwordConfirmView ? 'visibility_off' : 'visibility'

@@ -37,7 +37,8 @@ export default {
         nombre_empresa: "Nombre de la empresa",
         miembros: "¿Cuántos miembros hay?",
         descripcion: "Descripción de la empresa"
-      }
+      },
+      link: "Dashboard",
     },
     register: {
       title: "Nuevo Registro",

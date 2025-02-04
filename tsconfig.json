@@ -6,6 +6,7 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@middlewares/*": ["src/router/middlewares/*"],
       "@components/*": ["src/views/components/*"],
       "@composables/*": ["src/composables/*"],
       "@modules/*": ["src/views/modules/*"],

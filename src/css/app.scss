@@ -1,5 +1,7 @@
 .body--light {
   /* ... */
+  background: linear-gradient(to right, $gray-light, white) !important;
+
   .bg-modedark {
     background-color: white;
   }
@@ -10,11 +12,26 @@
   .modedark {
     background-color: white;
     color: $dark;
+  }
+
+  .bg-gradient-personal {
+    background: linear-gradient(to right, $gray-light, white) !important;
+  }
+
+  .t-bg-gray-light-dark {
+    color: $gray-dark;
+    background-color: white;
   }
 }
 
 .body--dark {
   /* ... */
+  background: linear-gradient(to right, $dark-deep, $gray-dark) !important;
+
+  &::-webkit-scrollbar {
+    background-color: $dark;
+  }
+
   .bg-modedark {
     background-color: $dark;
   }
@@ -26,4 +43,19 @@
     background-color: $dark;
     color: white;
   }
+
+  .bg-gradient-personal {
+    background: linear-gradient(to right, $dark-deep, $gray-dark) !important;
+  }
+
+  .t-text-gray-dark {
+    color: rgb(209, 209, 209);
+  }
+
+  .t-bg-gray-light-dark {
+    color: $gray-dark;
+    background-color: $gray-light;
+  }
 }
+
+@import './general.scss';
