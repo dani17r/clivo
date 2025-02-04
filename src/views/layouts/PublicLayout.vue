@@ -5,8 +5,8 @@
       <q-toolbar class="t-container t-mx-auto t-px-4 t-py-7 t-transition-all" :class="{ '!t-py-1.5': isScrolled }">
 
         <router-link class="t-mr-4" :to="{ name: 'init' }">
-          <img src="src/assets/logo-dark.png" alt="Logo" class="t-h-8 md:t-h-10" v-if="isDark">
-          <img src="src/assets/logo-light.png" alt="Logo" class="t-h-8 md:t-h-10" v-else>
+          <img src="~@/assets/logo-dark.png" alt="Logo" class="t-h-8 md:t-h-10" v-if="isDark">
+          <img src="~@/assets/logo-light.png" alt="Logo" class="t-h-8 md:t-h-10" v-else>
         </router-link>
         <q-select v-model="locale" :options="localeOptions" dense borderless emit-value map-options options-dense
           style="min-width: 50px; padding-right: 30px" color="secondary" />
@@ -83,7 +83,7 @@
     <footer class="t-bg-secondary t-text-dark-page t-py-12 md:t-py-20">
       <div class="t-container t-mx-auto t-px-4 t-grid t-grid-cols-1 sm:t-grid-cols-2 lg:t-grid-cols-5 t-gap-8">
         <div class="sm:t-col-span-2 lg:t-col-span-2">
-          <img src="src/assets/logo-light.png" alt="Logo" class="t-h-6 md:t-h-8 t-mb-4 md:t-mb-6">
+          <img src="~@/assets/logo-light.png" alt="Logo" class="t-h-6 md:t-h-8 t-mb-4 md:t-mb-6">
 
           <p class="t-text-dark-page t-text-sm md:t-text-base">
             La plataforma de marketing conversacional líder para WhatsApp, Instagram y Facebook.

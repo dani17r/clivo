@@ -28,7 +28,7 @@
         </div>
 
         <div class="lg:t-w-1/2 t-relative t-mt-12 lg:t-mt-0" data-aos="zoom-in">
-          <img src="src/assets/img/fondo.jpg" alt="Demo"
+          <img src="~@/assets/img/fondo.jpg" alt="Demo"
             class="t-rounded-xl t-shadow-2xl t-relative t-z-10 t-w-full t-max-w-2xl lg:t-max-w-none t-mx-auto">
           <div
             class="t-absolute t-inset-0 t-bg-blue-200 t-rounded-xl t-transform t-translate-y-8 md:t-translate-y-12 t-opacity-30">

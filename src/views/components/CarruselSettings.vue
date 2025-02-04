@@ -74,42 +74,42 @@ const imgs = ref([
   {
     id: 1,
     titulo: 'N8N',
-    url: 'src/assets/img/herramientas/n8n-logo.png'
+    url: new URL('src/assets/img/herramientas/n8n-logo.png', import.meta.url).href
   },
   {
     id: 2,
     titulo: 'supabase',
-    url: 'src/assets/img/herramientas/supabase-logo.png'
+    url: new URL('src/assets/img/herramientas/supabase-logo.png', import.meta.url).href
   },
   {
     id: 3,
     titulo: 'notion',
-    url: 'src/assets/img/herramientas/notion-logo.png'
+    url: new URL('src/assets/img/herramientas/notion-logo.png', import.meta.url).href
   },
   {
     id: 4,
     titulo: 'DeepSeek',
-    url: 'src/assets/img/herramientas/deepseek-logo.png'
+    url: new URL('src/assets/img/herramientas/deepseek-logo.png', import.meta.url).href
   },
   {
     id: 5,
     titulo: 'Python',
-    url: 'src/assets/img/herramientas/python-logo.png'
+    url: new URL('src/assets/img/herramientas/python-logo.png', import.meta.url).href
   },
   {
     id: 6,
     titulo: 'openai',
-    url: 'src/assets/img/herramientas/openai-logo.png'
+    url: new URL('src/assets/img/herramientas/openai-logo.png', import.meta.url).href
   },
   {
     id: 7,
     titulo: 'lanchaing',
-    url: 'src/assets/img/herramientas/lanchaing-logo.png'
+    url: new URL('src/assets/img/herramientas/lanchaing-logo.png', import.meta.url).href
   },
   {
     id: 9,
     titulo: 'gemini',
-    url: 'src/assets/img/herramientas/gemini-logo.png'
+    url: new URL('src/assets/img/herramientas/gemini-logo.png', import.meta.url).href
   },
 ]);
 </script>
