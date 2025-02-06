@@ -1,0 +1,1 @@
+import{d as t}from"../server-entry.js";import i from"axios";import"vue";import"quasar";import"vue/server-renderer";import"pinia";import"vue-router";import"@supabase/supabase-js";const r=i.create({baseURL:"https://api.example.com"}),n=t(({app:o})=>{o.config.globalProperties.$axios=i,o.config.globalProperties.$api=r});export{r as api,n as default};

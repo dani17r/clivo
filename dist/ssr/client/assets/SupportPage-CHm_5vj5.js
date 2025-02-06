@@ -1,0 +1,1 @@
+import{Q as t}from"./QPage-DVZo8ZiN.js";import{b as s,f as a,i as o,w as r,q as n,z as p}from"./index-Cwexi9cs.js";const c={class:"t-text-3xl"},m=s({__name:"SupportPage",setup(i){return(e,l)=>(a(),o(t,{class:"row items-center justify-evenly"},{default:r(()=>[n("h3",c,p(e.$t("pages.soporte.title")),1)]),_:1}))}});export{m as default};

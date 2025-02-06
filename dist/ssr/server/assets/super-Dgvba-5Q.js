@@ -1,0 +1,1 @@
+import{useRouter as s,useRoute as u}from"vue-router";import{u as m}from"../server-entry.js";import{useQuasar as n}from"quasar";const t=m(),i=()=>{const o=n(),e=s(),r=u();return{router:e,route:r,store:{reset:()=>{t.reset()},auth:t},$q:o}};export{i as s};

@@ -1,0 +1,1 @@
+import{ba as r,bb as u,bc as a}from"./index-Cwexi9cs.js";import{u as c}from"./use-quasar-DCYiJMqq.js";const s=a(),p=()=>{const t=c(),e=r(),o=u();return{router:e,route:o,store:{reset:()=>{s.reset()},auth:s},$q:t}};export{p as s};

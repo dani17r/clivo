@@ -1,0 +1,1 @@
+import{Q as t}from"./QPage-DVZo8ZiN.js";import{b as a,f as s,i as o,w as r,q as n,z as c}from"./index-Cwexi9cs.js";const i={class:"t-text-3xl"},m=a({__name:"PayPage",setup(p){return(e,l)=>(s(),o(t,{class:"row items-center justify-evenly"},{default:r(()=>[n("h3",i,c(e.$t("pages.pagos.title")),1)]),_:1}))}});export{m as default};

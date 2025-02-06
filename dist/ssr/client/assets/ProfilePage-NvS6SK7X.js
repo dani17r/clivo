@@ -1,0 +1,1 @@
+import{Q as t}from"./QPage-DVZo8ZiN.js";import{b as s,f as a,i as o,w as r,q as i,z as n}from"./index-Cwexi9cs.js";const c={class:"t-text-3xl"},m=s({__name:"ProfilePage",setup(l){return(e,p)=>(a(),o(t,{class:"row items-center justify-evenly"},{default:r(()=>[i("h3",c,n(e.$t("pages.perfil.title")),1)]),_:1}))}});export{m as default};
